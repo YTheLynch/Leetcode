@@ -6,7 +6,7 @@ public:
         
         int mid = low + (high - low)/2;
         int res = arr[mid];
-        while (low <= high) {
+        while (low < high) {
             if (arr[mid + 1] > res) {
                 low = mid + 1;
             } else if (arr[mid - 1] > res) {
